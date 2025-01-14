@@ -32,7 +32,7 @@
 
 - We can now access the website in our browser
 - Check the header of the site using ``curl -I http://127.0.0.1:8080``
-    ![alt text](/HTB/Machines/Chemistry/images/curl.png)
+    ![alt text](./Machines/Chemistry/images/curl.png)
 - we see ``Server: Python/3.9 aiohttp/3.9.1`` ; think to notice is aiohttp which contains vulnerability
 - Search for the CVE we come across the path traversal vulnerability in the python AioHTTP library =< 3.9.1
 - We came across [CVE-2024-23334](https://github.com/z3rObyte/CVE-2024-23334-PoC/tree/main)
@@ -43,4 +43,4 @@
 - Updating the ``exploit.sh`` to attack
     ![alt text](/HTB/Machines/Chemistry/images/exploit.png)
 - Running it we obtain root flag
-    ![alt text](/HTB/Machines/Chemistry/images/root.png)
+    ![alt text](./Machines/Chemistry/images/root.png)
