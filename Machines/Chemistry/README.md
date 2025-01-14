@@ -14,7 +14,7 @@
 - check for the user using ``whoami`` -> it is ``app``
 - search around the directories
 - we come across database.db in ~/instance/
-![alt text](/HTB/Machines/Chemistry/images/databasedb.png)
+![alt text](/Machines/Chemistry/images/databasedb.png)
 - read the file
 - It has hashes of passwords copy hash for rosa and decrypt hash to get password
 
@@ -32,15 +32,15 @@
 
 - We can now access the website in our browser
 - Check the header of the site using ``curl -I http://127.0.0.1:8080``
-    ![alt text](./Machines/Chemistry/images/curl.png)
+    ![alt text](/Machines/Chemistry/images/curl.png)
 - we see ``Server: Python/3.9 aiohttp/3.9.1`` ; think to notice is aiohttp which contains vulnerability
 - Search for the CVE we come across the path traversal vulnerability in the python AioHTTP library =< 3.9.1
 - We came across [CVE-2024-23334](https://github.com/z3rObyte/CVE-2024-23334-PoC/tree/main)
-    ![alt text](/HTB/Machines/Chemistry/images/cve.png)
+    ![alt text](/Machines/Chemistry/images/cve.png)
 - Now searching for directories to traverse using ``dirsearch -u http://localhost:8080``
-    ![alt text](/HTB/Machines/Chemistry/images/dirsearch.png)
+    ![alt text](/Machines/Chemistry/images/dirsearch.png)
 - We come across /assets/
 - Updating the ``exploit.sh`` to attack
-    ![alt text](/HTB/Machines/Chemistry/images/exploit.png)
+    ![alt text](/Machines/Chemistry/images/exploit.png)
 - Running it we obtain root flag
-    ![alt text](./Machines/Chemistry/images/root.png)
+    ![alt text](/Machines/Chemistry/images/root.png)
