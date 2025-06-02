@@ -8,13 +8,13 @@ Welcome to my personal collection of write-ups for **retired Hack The Box (HTB) 
 
 | Machine     | Difficulty | OS      | Write-up                |
 |-------------|------------|---------|-------------------------|
-| Heal        | Medium     | Linux   | [Heal](./Heal/README.md)        |
-| Instant     | Easy       | Windows | [Instant](./Instant/README.md)  |
-| Underpass   | Medium     | Linux   | [Underpass](./Underpass/README.md) |
-| Chemistry   | Medium     | Windows | [Chemistry](./Chemistry/README.md) |
+| Heal        | Medium     | Linux   | [Heal](./Machines/Heal/README.md)        |
+| Instant     | Easy       | Windows | [Instant](./Machines/Instant/README.md)  |
+| Underpass   | Medium     | Linux   | [Underpass](./Machines/Underpass/README.md) |
+| Chemistry   | Medium     | Windows | [Chemistry](./Machines/Chemistry/README.md) |
 
 ## 📂 Repository Structure
-HTB/ <br>
+HTB/Machines/ <br>
 ├── Heal/ <br>
 │ └── README.md <br>
 ├── Instant/ <br>
